@@ -386,142 +386,6 @@ img.pull-left {
 	}
 }
 
-/** 
- * ===================================================================
- * 05. forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- 
- */
-fieldset {
-	border: none;
-}
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-	display: block;
-	height: 6rem;
-	padding: 1.5rem 0;
-	border: 0;
-	outline: none;
-	color: #313131;
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.5rem;
-	line-height: 3rem;
-	max-width: 100%;
-	background: transparent;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.ss-custom-select {
-	position: relative;
-	padding: 0;
-}
-.ss-custom-select select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-o-appearance: none;
-	appearance: none;
-	text-indent: 0.01px;
-	text-overflow: '';
-	margin: 0;
-	line-height: 3rem;
-	vertical-align: middle;
-}
-.ss-custom-select select option {
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-.ss-custom-select select::-ms-expand {
-	display: none;
-}
-.ss-custom-select::after {
-	content: '\f0d7';
-	font-family: 'FontAwesome';
-	position: absolute;
-	top: 50%;
-	right: 1.5rem;
-	margin-top: -10px;
-	bottom: auto;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	font-size: 18px;
-	text-align: center;
-	pointer-events: none;
-	color: #252525;
-}
-
-/* IE9 and below */
-.oldie .ss-custom-select::after {
-	display: none;
-}
-textarea {
-	min-height: 25rem;
-}
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-	color: #cc005f;
-	border-bottom: 1px solid var(--accent-color);
-}
-label, legend {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.4rem;
-	margin-bottom: .6rem;
-	color: #3b3b3b;
-	display: block;
-}
-input[type="checkbox"], input[type="radio"] {
-	display: inline;
-}
-label > .label-text {
-	display: inline-block;
-	margin-left: 1rem;
-	font-family: "poppins-regular", sans-serif;
-	line-height: inherit;
-}
-label > input[type="checkbox"], label > input[type="radio"] {
-	margin: 0;
-	position: relative;
-	top: .15rem;
-}
-
-/**
- * Style Placeholder Text  
- * -
- */
-::-webkit-input-placeholder {
-	color: #a1a1a1;
-}
-:-moz-placeholder {
-	color: #a1a1a1;  /* Firefox 18- */
-}
-::-moz-placeholder {
-	color: #a1a1a1;  /* Firefox 19+ */
-}
-:-ms-input-placeholder {
-	color: #a1a1a1;
-}
-.placeholder {
-	color: #a1a1a1 !important;
-}
 
 /** 
  * ===================================================================
@@ -569,7 +433,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
 	background: #bebebe;
-	color: #000000;
+	color: var(a);
 	outline: 0;
 }
 .button.button-primary,
@@ -592,17 +456,13 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-	background: #1f1f1f;
+	background: var(--accent-color);
 }
 button.full-width, .button.full-width {
 	width: 100%;
 	margin-right: 0;
 }
-button.medium, .button.medium {
-	height: 5.7rem !important;
-	line-height: 5.7rem !important;
-	padding: 0 1.8rem !important;
-}
+
 button.large, .button.large {
 	height: 6rem !important;
 	line-height: 6rem !important;
@@ -673,33 +533,7 @@ h5 {
 	letter-spacing: .4rem;
 }
 
-/**
- * responsive:
- * common styles
- * ------------------------------------------------------------------- 
- */
-@media only screen and (max-width:768px) {
-	.section-intro {
-		max-width: 650px;
-	}
-	.section-intro h1 {
-		font-size: 3rem;
-	}
-}
-@media only screen and (max-width:600px) {
-	.section-intro h1 {
-		font-size: 2.6rem;
-	}
-	.section-intro h5 {
-		font-size: 1.5rem;
-		letter-spacing: .3rem;
-	}
-}
-@media only screen and (max-width:400px) {
-	.section-intro h1 {
-		font-size: 2.4rem;
-	}
-}
+
 
 
 /** 
@@ -713,39 +547,6 @@ header {
 	width: 100%;
 	min-height: 66px;
 	z-index: 600;
-}
-header .row {
-	position: relative;
-	min-height: 66px;
-}
-header .top-bar {
-	display: block;
-/* 	background: #000000; */
-	min-width: 150px;
-	min-height: 66px;
-	position: absolute;
-	left: 0px;
-	top: 0;
-}
-header .logo {
-	float: left;
-	margin-left: 20px;
-	margin-right: 50px;
-	margin-top: 25px;
-	position: relative;
-}
-header .logo a {
-	display: block;
-	margin: 0;
-	padding: 0;
-	border: none;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	width: 92px;
-	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
 }
 
 /**
@@ -841,23 +642,12 @@ header .logo a {
 	transform: rotate(-45deg);
 }
 
-/* navigation panel */
-#main-nav-wrap {
-	display: block;
-	width: 100%;
-	font-family: "poppins-medium", sans-serif;
-	font-size: 1.5rem;
-	position: absolute;
-	top: 100%;
-	left: 0;
-}
-
 /* dropdown nav */
 .main-navigation {
 	background: #00000031;
 	padding: 24px 30px 42px;
-	margin: 0;
-	width: 100%;
+	margin: 20px;
+	width: 10%;
 	height: auto;
 	clear: both;
 	display: none;
@@ -869,6 +659,7 @@ header .logo a {
 	text-align: left;
 	padding: 0;
 }
+
 .main-navigation li a {
 	display: block;
 	color: #ffffff;
