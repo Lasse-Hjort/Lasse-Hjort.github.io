@@ -1127,6 +1127,7 @@ header {
 	-webkit-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 #portfolio .folio-item-table {
@@ -1144,7 +1145,6 @@ header {
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 	position: relative;
-	left: -100%;
 	padding: 10%;
 }
 
@@ -1159,13 +1159,15 @@ header {
 	padding: 0;
 	text-transform: uppercase;
 	font-family: "poppins-regular", sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	letter-spacing: .1rem;
-	color: rgba(255, 255, 255, 0.6);
+	color: rgb(255, 255, 255);
 }
-#portfolio .folio-item:hover .overlay {
+
+/* #portfolio .folio-item:hover .overlay {
 	background: rgba(0, 0, 0, 0.8);
-}
+} */
+
 #portfolio .folio-item:hover .folio-item-cell {
 	left: 0;
 }
