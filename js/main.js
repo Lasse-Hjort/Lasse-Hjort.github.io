@@ -124,7 +124,7 @@
       fixedContentPos: false,
       removalDelay: 300,
       showCloseBtn: false,
-      mainClass: 'mfp-fade'
+      mainClass: 'mfp-fade',
 
    });
 

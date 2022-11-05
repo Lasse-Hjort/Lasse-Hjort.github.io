@@ -375,7 +375,7 @@
 	height: 100%;
 	z-index: 1042;
 	overflow: hidden;
-	position: fixed;
+	position: absolute;
 	background: #0b0b0b;
 	opacity: 0.8;
 	filter: alpha(opacity=80);

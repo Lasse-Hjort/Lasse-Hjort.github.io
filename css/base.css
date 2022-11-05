@@ -169,7 +169,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	-webkit-appearance: button;
+
 	cursor: pointer;
 }
 
@@ -200,16 +200,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="search"] {
-	-webkit-appearance: textfield;
+
 	-moz-box-sizing: content-box;
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
 
 fieldset {
 	border: 1px solid #c0c0c0;
@@ -254,7 +250,7 @@ html {
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 body {

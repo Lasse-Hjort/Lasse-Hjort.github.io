@@ -372,6 +372,9 @@ input[type="button"].button-primary {
 	background: #313131;
 	color: #FFFFFF;
 }
+
+
+
 .button.button-primary:hover,
 a.button.button-primary:hover,
 button.button-primary:hover,
@@ -388,8 +391,13 @@ input[type="button"].button-primary:focus {
 
 button.stroke, .button.stroke {
 	background: transparent !important;
-	border: 3px solid #313131;
-	line-height: 4.8rem;
+	border: 3px solid #ffffff;
+	line-height: 2.8rem;
+	color: white;
+	height: 3rem;
+	font-size: 1rem;
+	margin-top: 2rem;
+
 }
 
 button.stroke:hover, .button.stroke:hover {
@@ -694,7 +702,7 @@ header {
 	height: 6rem !important;
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
-	margin-top: .6rem;
+	margin-top: 4.6rem;
 	font-size: 1.3rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
@@ -1203,10 +1211,12 @@ header {
  * ------------------------------------------------------------------
  */
 .popup-modal {
-	max-width: 550px;
+	max-width: 80rem;
+	height:80rem;
 	background: #FFFFFF;
 	position: relative;
 	margin: 0 auto;
+	overflow: auto;
 }
 .popup-modal .media {
 	position: relative;
