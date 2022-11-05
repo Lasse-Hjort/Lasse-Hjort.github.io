@@ -121,9 +121,9 @@
    $('.item-wrap a').magnificPopup({
 
       type:'inline',
-      fixedContentPos: false,
+      /* fixedContentPos: false, */
       removalDelay: 300,
-      showCloseBtn: false,
+      showCloseBtn: true,
       mainClass: 'mfp-fade',
 
    });
@@ -132,6 +132,8 @@
    	e.preventDefault();
    	$.magnificPopup.close();
    });
+
+
 
 	
 	/*-----------------------------------------------------*/
@@ -289,3 +291,4 @@
 	});		
 
 })(jQuery);
+

@@ -1113,6 +1113,7 @@ header {
 	padding: 0;
 	position: relative;
 	overflow: hidden;
+	margin: 5px;
 }
 #portfolio .folio-item img {
 	vertical-align: middle;
@@ -1215,11 +1216,13 @@ header {
 	height:80rem;
 	background: #FFFFFF;
 	position: relative;
-	margin: 0 auto;
+	margin: auto;
 	overflow: auto;
 }
 .popup-modal .media {
 	position: relative;
+	margin: auto;
+	display: block;
 }
 .popup-modal img {
 	vertical-align: bottom;
