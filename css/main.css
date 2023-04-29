@@ -731,7 +731,7 @@ header {
 }
 .intro-content .button {
   color: #ffffff !important;
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: rgb(255, 255, 255);
   height: 6rem !important;
   line-height: 5.4rem !important;
   padding: 0 3.5rem 0 3rem !important;
@@ -744,16 +744,16 @@ header {
 .intro-content .button:focus {
   border-color: #cc005f;
 }
-.intro-content .button::after {
+/* .intro-content .button::after {
   display: inline-block;
-  content: "\f107";
+  content: "\e935";
   font-family: fontAwesome;
   font-size: 1.6rem;
   line-height: inherit;
   text-align: center;
   position: relative;
   left: 1.2rem;
-}
+} */
 
 .intro-social {
   display: block;
