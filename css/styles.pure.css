@@ -1394,6 +1394,7 @@ header {
   position: relative;
   margin: auto;
   display: block;
+  max-height: 50rem;
 }
 .popup-modal img {
   vertical-align: bottom;
