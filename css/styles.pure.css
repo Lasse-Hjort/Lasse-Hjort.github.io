@@ -696,21 +696,35 @@ input[type="submit"].button-primary:focus,
 input[type="submit"].button-primary:hover {
   background: var(--accent-color);
 }
-.button.stroke,
-button.stroke {
-  background: 0 0 !important;
+.button.stroke {
+  background: transparent;
   border: 3px solid #fff;
-  line-height: 2.8rem;
   color: #fff;
   height: 3rem;
   font-size: 1.2rem;
   margin-top: 2rem;
-}
-.button.stroke:hover,
-button.stroke:hover {
-  border: 3px solid var(--accent-color);
-  color: var(--accent-color);
-}
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  }
+  
+  .button.stroke:hover {
+  background: var(--accent-color);
+  
+  border: none;
+  color: white;
+  
+  transform: scale(1.05);
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--accent-color);
+  transition: 0.3s ease-in-out;
+  }
+  
 .grey-section {
   background: #ebebeb;
 }
